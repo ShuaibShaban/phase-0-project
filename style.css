@@ -4,13 +4,15 @@
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
     text-decoration: none; 
-    color: none;
+    
 }
 .main{
      height: 100vh;
      width: 100%;
-     background-image: url(../Downloads/bckrnd\ 2.avif);
-     background-size: cover;
+     background-position: center;
+     padding: 0 6%;
+     position: relative;
+     background-color: black;
 }
 .main ul li{
     display: flex;
@@ -56,7 +58,22 @@ nav{
     padding: 10px 25px;
     border-radius: 30px;
     transform: transform .4s;
+    padding-left: 30px;
 }
 .btn:hover{
     transform: scale(1.2);
+}
+span{
+width: 100px;
+height: 100px;
+position: relative;
+animation:myfirst 2s 20;
+animation-direction: alternate;
+
+}
+@keyframes myfirst{
+    0% { color: #f9004d(0,0,0);left:0px;top: 0px;}
+    30% { color: #00f9bb(0,60,255);left:200px;top: 0px;}
+    100% { color: #0042f9(246,254,245);left:200px;top: 200px;}
+    40% { color: #3af900(255,255,255);left:0px;top: 0px;}
 }
